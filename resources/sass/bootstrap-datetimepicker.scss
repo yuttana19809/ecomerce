@@ -1,0 +1,21 @@
+
+$bs-datetimepicker-btn-hover-bg: #2f353a;
+
+@import "node_modules/tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4-build.scss";
+
+.bootstrap-datetimepicker-widget {
+    &.dropdown-menu {
+        width: 16rem;
+    }
+
+    table {
+        & th {
+            border-bottom: none;
+        }
+
+        & th,
+        & td {
+            border-top: none;
+        }
+    }
+}

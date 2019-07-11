@@ -1,0 +1,21 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/bootstrap.js": "/js/bootstrap.js",
+    "/css/bootstrap.css": "/css/bootstrap.css",
+    "/css/coreui.css": "/css/coreui.css",
+    "/css/coreui-icons.css": "/css/coreui-icons.css",
+    "/css/simple-line-icons.css": "/css/simple-line-icons.css",
+    "/css/font-awesome.css": "/css/font-awesome.css",
+    "/css/sweetalert2.css": "/css/sweetalert2.css",
+    "/css/toastr.css": "/css/toastr.css",
+    "/css/bootstrap-datetimepicker.css": "/css/bootstrap-datetimepicker.css",
+    "/js/bootstrap-datetimepicker.js": "/js/bootstrap-datetimepicker.js",
+    "/js/coreui.js": "/js/coreui.js",
+    "/js/jquery.js": "/js/jquery.js",
+    "/js/pace.js": "/js/pace.js",
+    "/js/perfect-scrollbar.js": "/js/perfect-scrollbar.js",
+    "/js/popper.js": "/js/popper.js",
+    "/js/moment.js": "/js/moment.js",
+    "/css/pace.css": "/css/pace.css",
+    "/css/dataTables.bootstrap.css": "/css/dataTables.bootstrap.css"
+}
