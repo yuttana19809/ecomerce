@@ -1,0 +1,241 @@
+
+$body-color: #e4e7ea;
+$body-bg: #2f353a;
+
+$border-color: #23282c;
+
+$sidebar-width: 230px;
+$navbar-brand-width: 185px;
+
+$navbar-bg: #3a4149;
+$navbar-color: #e4e7ea;
+$navbar-hover-color: #fff;
+$navbar-active-color: #fff;
+
+$aside-menu-color: #e4e7ea;
+$aside-menu-bg: #3a4149;
+
+$footer-bg: #3a4149;
+
+$breadcrumb-bg: #3a4149;
+$breadcrumb-divider-color: #f3f4f5;
+$breadcrumb-active-color: #f3f4f5;
+
+$sidebar-bg: #3a4149;
+$sidebar-borders: (
+    right: (
+      size: 1px,
+      style: solid,
+      color: $border-color
+    )
+);
+
+$dropdown-header-color: #e4e7ea;
+$dropdown-bg: #3a4149;
+$dropdown-border-color: #23282c;
+$dropdown-divider-bg: #2f353a;
+$dropdown-link-color: #e4e7ea;
+$dropdown-link-hover-color: #e4e7ea;
+$dropdown-link-hover-bg: #2d353a;
+
+$card-cap-bg: #343b41;
+$card-bg: #3a4149;
+$card-border-color: #23282c;
+
+$input-color: #e4e7ea;
+$input-bg: #515b65;
+$input-border-color: #23282c;
+$input-placeholder-color: #acb4a8;
+$input-group-addon-bg: #343b41;
+$input-group-addon-border-color: #23282c;
+$input-disabled-bg: #3a4149;
+
+$modal-content-bg: #3a4149;
+$modal-header-bg: #343b41;
+$modal-header-border-color: #23282c;
+$modal-footer-bg: #343b41;
+$modal-footer-border-color: #23282c;
+
+$list-group-bg: #343b41;
+
+$pagination-bg: #343b41;
+$pagination-border-color: #23282c;
+$pagination-hover-bg: #2d353a;
+$pagination-hover-border-color: #23282c;
+$pagination-active-color: #343b41;
+$pagination-active-bg: #20a8d8;
+$pagination-disabled-color: #73818f;
+$pagination-disabled-bg: #23282c;
+$pagination-disabled-border-color: #23282c;
+
+// Core-UI
+@import '~@coreui/coreui/scss/coreui';
+
+.avatar {
+    > img {
+        border: 1px solid #fff;
+        background-color: #fff;
+    }
+}
+
+.img-avatar {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.tab-content {
+    background-color: #3a4149;
+}
+
+.progress {
+    background-color: #515b65;
+}
+
+.nav-tabs {
+    .nav-link {
+        &:hover {
+            border-color: $border-color;
+        }
+        &.active {
+            color: $gray-800;
+            background-color: #343b41;
+            border-color: $border-color;
+            border-bottom-color: $border-color;
+            &:focus {
+                background-color: #343b41;
+                border-color: $border-color;
+                border-bottom-color: $border-color;
+            }
+        }
+    }
+}
+
+.sidebar {
+    .nav-dropdown.open {
+        .nav-sub {
+            color: #bbb;
+        }
+    }
+}
+
+.list-group-accent {
+    .list-group-item {
+        background-color: #343b41;
+  
+        &.list-group-item-divider {
+            &::before {
+                background-color: #2f353a;
+            }
+        }
+    }
+}
+
+.breadcrumb-menu {
+    .btn {
+        color: #f3f4f5;
+    }
+}
+
+.dropdown-item {
+    i {
+      color: #73818f;
+    }
+}
+
+.dropdown-header {
+    font-size: initial;
+}
+
+.sidebar {
+    .nav-title {
+        font-size: 0.875rem;
+    }
+
+    .nav-dropdown.open {
+        .nav-link-sub {
+            color: #aaa;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.modal-header {
+    background-color: $modal-header-bg;
+}
+
+.modal-footer {
+    background-color: $modal-footer-bg;
+}
+
+.btn-group {
+    > .btn.btn-action {
+        padding: 0;
+        margin-left: 8px;
+        margin-right: 8px;
+        border: none;
+        background: none;
+        color: #20a8d8;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:disabled {
+            color: #999;
+        }
+
+        &:not(:last-child):not(.dropdown-toggle) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        &:not(:first-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &:first-child {
+            margin-left: 0px;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.btn-group.btn-group-header {
+    > .btn.btn-action {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.btn-group.btn-group-header button+button:before {
+    padding: 10px;
+    color: white;
+    content: "|";
+}
+
+.modal {
+    &.fade {
+        .modal-dialog {
+            &.modal-dialog-zoom {
+                -webkit-transform: translate(0,0) scale(.5);
+                transform: translate(0,0) scale(.5);
+            }
+        }
+    }
+
+    &.show {
+        .modal-dialog {
+            &.modal-dialog-zoom {
+                -webkit-transform: translate(0,0) scale(1);
+                transform: translate(0,0) scale(1);
+            }
+        }
+    }
+}
